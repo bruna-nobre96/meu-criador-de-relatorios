@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+     <header class="cabecalho">
+        <h1>    <p>Registro de Coolers e Produtos</p></h1>
+    </header>
+
+    <main class="container">
+       <section class="secao-entrada">
+ 
+    
+    <h2> Inclusão de Itens </h2>
+    
+    <form id="formularioAdicionarItem">
+        <div class="campo-grupo item-inline">
+            <div class="campo-cooler">
+                <label for="nomeCooler">Cooler:</label>
+                <input type="text" id="nomeCooler" required placeholder="Ex: C001 ou Loja X">
+            </div>
+            <div class="campo-produto">
+                <label for="nomeProduto">Produto:</label>
+                <input type="text" id="nomeProduto" required placeholder="Ex: Coca-Cola Lata 350ml">
+            </div>
+            <button type="submit" class="botao-adicionar">+</button>
+        </div>
+    </form>
+    
+    <h3>Lançamento de Dados:</h3>
+    <div id="listaItensPreview" class="tabela-preview">
+        <p class="aviso-vazio">Nenhum item adicionado ainda.</p>
+    </div>
+    
+    <button type="button" id="botaoGerarRelatorio" class="botao-gerar">Visualizar</button>
+
+</section>
+        
+        <section class="secao-visualizacao">
+            <h2>Visualização dos dados</h2>
+            <div id="relatorioSaida" class="cartao-relatorio">
+                <p>Os detalhes gerado apareceram aqui.</p>
+                </div>
+            <button class="botao-copiar" id="botaoCopiarRelatorio">Copiar para WhatsApp</button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 - Gerador Simples. Desenvolvido com HTML & CSS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
