@@ -1,4 +1,4 @@
-ocument.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     // Referências do HTML
     const formItem = document.getElementById('formularioAdicionarItem');
     const inputCooler = document.getElementById('nomeCooler');
